@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo
+    </title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tachos">
+        <p><label for="username">Enter your username: <input id="username" type="text"
+                    placeholder="Username here"></label></p>
+        <p><label for="password">Enter your password: <input id="password" type="password"
+                    placeholder="password here"></label></p>
+        <p><label for="number">Enter your number: <input id="number" type="number" placeholder="number here"></label>
+        </p>
+        <p><label for="color">Enter your color: <input id="color" type="color" placeholder="color here"></label></p>
+        <p><label for="date">Enter your date: <input type="date" id="date" placeholder="date here"></label></p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Searches
+    </h2>
+    <h3>Google Search</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" id="search">
+        <button>Google Search</button>
+    </form>
+    <h3>Youtube Search</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" id="search">
+        <button>Search Youtube</button>
+    </form>
+    <h2>Check Boxes</h2>
+    <form action="/birds">
+        <label for="bird"><input type="checkbox" name="checkbox_tos" id="bird">Agree to all the Terms.</label>
+        <button>Submit</button>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <br>
+
+            <label for="select">Select your meal:</label>
+            <select name="name" id="select">
+                <option value="">Select from the dropdown:</option>
+                <option value="Fish">Fish</option>
+                <option value="Chicken">Chicken</option>
+                <option value="goat">Goat</option>
+                <option value="another">Another Fish</option>
+            </select>
+            <button>Submit</button>
+
+        </p>
+    </form>
+</body>
+
+</html>
